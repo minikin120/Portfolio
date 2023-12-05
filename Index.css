@@ -37,7 +37,7 @@ body{
 }
 
 .stx{
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 h1{
@@ -63,12 +63,22 @@ h2{
     to { width: 100% }
 }
 
+.naama{
+    position: relative;
+    overflow: hidden;
+    display:inline-block;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    height: 800px;
+    margin-left: 1184px;
+}
+
 .box{
     width: 800px;
     height: 450px;
     background-color: black;
     margin: 20px;
-    content: "";
     top: 10px;
     text-align: center;
     position: relative;
@@ -118,8 +128,4 @@ h3{
     50%  { content: ' ..'; }
     75%  { content: ' ...'; }
     100% { content: ''; }
-}
-
-.naama{
-    padding-right: 100%;
 }
