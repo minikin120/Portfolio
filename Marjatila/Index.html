@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+</head>
+<body>
+
+    <div id="sivu" class="sivupalkki">
+  <a href="javascript:void(0)" class="sulku" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="Tiedot.html">Tiedot</a>
+  <hr>
+  <a href="Tuotteet.html">Tuotteet</a>
+  <hr>
+  <a href="Hinnasto.html">Hinnasto</a>
+  <hr>
+  <a href="Tilaaminen.html">Tilaaminen</a>
+  <hr>
+</div>
+
+<div id="nappi">
+    <button class="avaus" onclick="openNav()">&#9776; Sivut</button>
+</div>
+
+<script>
+    function openNav() {
+      document.getElementById("sivu").style.width = "250px";
+      document.getElementById("nappi").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sivu").style.width = "0";
+      document.getElementById("nappi").style.marginLeft= "0";
+    }
+    </script>
+
+    <a><center><img src="Etusivu.png" alt="" class="kuva"></center></a>
+    <br>
+    <br>
+    <br>
+    
+    <h2><center>Tervetuloa ohimaan marjatilalle!</center></h2>
+
+        <center><p> Ohimaan marjatila on vuodesta 1981 pystyssä ollut perheyritys, jossa kaikki marjat tuotetaan egologisesti ilman mitään myrkkyjä. Meillä on myös
+    <br> 
+    kesä työntekijöillekkin paikkoja aina vapaana ja mottomme onkin
+    <br>
+    "Asiakkaan ilo on meidän ilo!"
+<br>
+<element class="tervetulo">TERVETULOA!</element></p></center>
+</body>
+</html>

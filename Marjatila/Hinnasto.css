@@ -1,0 +1,100 @@
+body{
+  background-image: url(mansikka1.jpg);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.kuva{
+    padding-right: 0px;
+    margin: 0px;
+    float: middle;
+      width: 650px;
+  }
+
+.sivupalkki{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: darkmagenta;
+}
+
+.avaus {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: slateblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .avaus:hover {
+    background-color: purple;
+  }
+
+  .sivupalkki a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px rgb(255, 142, 142),
+    0 0 1em rgb(31, 252, 248),
+    0 0 0.2em rgb(0, 0, 0);
+  }
+
+  .sivupalkki a:hover {
+    color: plum;
+  }
+
+  .sivupalkki .sulku{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #nappi {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .hinnat1{
+    background-color: rgb(174, 92, 174);
+    width: 300px;
+    height: 500px;
+    border-style: solid;
+    border-color: blueviolet;
+    float: left;
+  }
+
+  .hinnat2{
+    background-color: rgb(174, 92, 174);
+    width: 300px;
+    height: 500px;
+    border-style: solid;
+    border-color: blueviolet;
+    float: right;
+  }
+
+  .hinta{
+    padding: 5px;
+  }
+  
+  .hinnat::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  p{
+    color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

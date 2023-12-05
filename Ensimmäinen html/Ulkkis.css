@@ -1,0 +1,85 @@
+.pelit {
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 3px;
+    margin-bottom: 105px;
+    width: 50%;
+}
+
+body{
+    background-image: url(tausta3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+aside {
+    color: white;
+    font-style: unset;
+    width: 10%;
+    padding-left: 10px;
+    margin-left: 105px;
+    float: right;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px rgb(0, 112, 177),
+    0 0 1em rgb(127, 192, 252),
+    0 0 0.2em blue;
+    color: rgb(205, 194, 233);
+    background-image: url(tausta.jpg);
+}
+
+footer {
+    color: white;
+    width: 10%;
+    padding-left: 0px;
+    float:left;
+
+}
+
+section{
+    font-size: 20px;
+    text-shadow:     1px 1px 2px rgb(0, 0, 0),
+    0 0 1em rgb(0, 0, 0),
+    0 0 0.2em rgb(0, 0, 0);
+    color: darkgray;
+}
+
+table{
+    color: snow;
+    text-shadow: 1px 1px 2px aqua,
+    0 0 1em blue,
+    0 0 0.2em white;
+    table-layout: fixed;
+    box-shadow: 1px 1px 2px purple,
+    0 0 1em lightskyblue,
+    0 0 0.2em pink;
+}
+
+footer{
+    color: lightblue;
+    text-shadow:     1px 1px 2px rgb(0, 0, 0),
+    0 0 1em rgb(192, 192, 255),
+    0 0 0.2em rgb(242, 201, 255);
+}
+
+h2{
+    color: blueviolet;
+}
+
+div.a{
+    width: 0%;
+    padding-right: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    float: middle;
+}
+
+.dis:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Tiedot.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiedot</title>
+</head>
+<body>
+
+     <div id="sivu" class="sivupalkki">
+  <a href="javascript:void(0)" class="sulku" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="Index.html">Etusivu</a>
+  <hr>
+  <a href="Tuotteet.html">Tuotteet</a>
+  <hr>
+  <a href="Hinnasto.html">Hinnasto</a>
+  <hr>
+  <a href="Tilaaminen.html">Tilaaminen</a>
+  <hr>
+</div>
+
+<div id="nappi">
+    <button class="avaus" onclick="openNav()">&#9776; Sivut</button>
+</div>
+
+<script>
+    function openNav() {
+      document.getElementById("sivu").style.width = "250px";
+      document.getElementById("nappi").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sivu").style.width = "0";
+      document.getElementById("nappi").style.marginLeft= "0";
+    }
+    </script>
+
+    <div class="teksti">
+        <a><center><img src="Tiedot.png" alt="" class="kuva"></center></a>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center><p class="työ"><ins>työntekijät</ins></p></center>
+
+<br>
+<br>
+
+<div class="tyontekijat">
+  <div class="pf">
+    <center><a><img src="Profiili.png" alt="kuva1" style="width: 195px;" style="height: 250px;"></a>
+    <p class="nimi">Risto Naure</p>
+    <p>Naureen@gmail.com</p>
+    <p>040 7486525</p></center>
+  </div>
+
+  <div class="pf">
+    <center><a><img src="Profiili.png" alt="kuva1" style="width: 195px;" style="height: 250px;"></a>
+    <p class="nimi">kalle koditon</p>
+    <p>Kalle.koditon@gmail.com</p>
+    <p>040 5845322</p></center>
+  </div>
+
+  <div class="pf">
+    <center><a><img src="Profiili.png" alt="kuva1" style="width: 195px;" style="height: 250px;"></a>
+    <p class="nimi">Julius Palttala</p>
+    <p>Julius.palttala@gmail.com</p>
+    <p>040 1234567</p></center>
+  </div>
+</div>
+
+<br>
+<br>
+<footer id="footer">
+  <center><p id="footer-text"><b>Ohimaan marjatila</b> © kaikki oikeudet pidätetään</p>
+    <br>
+    <br>
+  <a href="https://www.facebook.com/" class="logo"></a>
+  <a href="https://www.instagram.com/" class="logo1"></a>
+</center>
+</footer>
+</body>
+</html>
