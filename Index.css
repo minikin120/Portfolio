@@ -1,16 +1,16 @@
 body{
     background-attachment: fixed;
     margin: 0;
-
 }
 .navig{
-    background-color: gray; 
+    background-color: cornflowerblue;
     list-style-type: none;
     text-align:right;
     margin: 0;
     padding: 0;
     height: 100px;
     padding-right: 10px;
+    box-shadow: 1px 1px 3px black;
 }
   
 .navig li{
@@ -81,12 +81,45 @@ h2{
     width: 1000px;
 }
 
-.Tiedot{
+.haku{
     height: 100px;
     background-color: bisque;
+    text-align: center;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
 }
 
 .txtiedot{
-    font-size: 36px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    color: rgb(25, 90, 169);
+}
+
+.taidot{
+    color: purple;
+}
+
+h3{
+    color: black;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dot::after{
+    display: inline-block;
+    animation: dotten 1.5s infinite;
+    content: '';
+}
+  
+@keyframes dotten{
+    0%   { content: ''; }
+    25%  { content: ' .'; }
+    50%  { content: ' ..'; }
+    75%  { content: ' ...'; }
+    100% { content: ''; }
+}
+
+.naama{
+    padding-right: 100%;
 }
