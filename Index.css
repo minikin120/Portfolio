@@ -168,5 +168,13 @@ h3{
 }
 
 .somet{
-    width: 100px;
+    height: 54px;
+    width: 74px;
+    float:right;
+    padding-top: 230px;
+    margin: 1px;
+}
+
+.some{
+    padding-right: 800px;
 }
