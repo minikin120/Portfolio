@@ -27,6 +27,7 @@ body{
     color: black;
     font-size: 16px;
     font-family: monospace;
+    cursor: pointer;
 }
 
 .start{
@@ -130,4 +131,24 @@ h3{
     50%  { content: ' ..'; }
     75%  { content: ' ...'; }
     100% { content: ''; }
+}
+
+.tude{
+    color: lightskyblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    text-shadow: gray 1px 1px 1px;
+}
+
+.bx0{
+    background-image: url(Taustani.png);
+    background-size: 900px;
+}
+
+.bx1{
+    background-image: url(Mansikka1.jpg);
+}
+
+.bx3{
+    background-image: url(Kauppalista.png);
 }
