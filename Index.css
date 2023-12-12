@@ -152,3 +152,21 @@ h3{
 .bx3{
     background-image: url(Kauppalista.png);
 }
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: burlywood;
+    background-image: linear-gradient(white,burlywood,burlywood, burlywood);
+}
+
+.ftxt{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-top: 250px;
+}
+
+.somet{
+    width: 100px;
+}
