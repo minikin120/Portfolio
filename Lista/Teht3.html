@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teht3</title>
+</head>
+<body style="background-color: cyan;">
+    <center>
+        <br><br><br><br><br><br>
+    <input type="text" id="producti" placeholder="Tavara" minlength="8">
+    <input type="number" id="countti" placeholder="määrä" min="1">
+    <br><br>
+    <button for="product count" onclick="tulosta()">Tulosta</button>
+    <button for="product count" onclick="clears()">Tyhjää lista</button>
+    <div id="div1" style="border:chartreuse; border-radius: 10px;">
+</div>
+</center>
+    
+<script>
+    function tulosta(){
+        const product = document.getElementById("producti").value;
+        const count = document.getElementById("countti").value;
+        if (product == ""){
+            alert("Anna tuotteelle arvo!!!");
+        }
+        else if(product.length < 2){
+            alert("Anna oikea nimi!!!");
+        }
+        else if(count <= 0){
+            alert("Anna määrälle arvo!!!");
+        }
+        else{
+            const ptag = document.createElement("p");
+            const all = document.createTextNode("|Tuote:  "+product+"|Määrä: " + count);
+            ptag.appendChild(all);
+            const element = document.getElementById("div1");
+            element.appendChild(ptag);
+        }
+        }
+        function clears(){
+            document.getElementById("div1").innerHTML = "";
+
+        }
+</script>
+</body>
+</html>

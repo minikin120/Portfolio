@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Tilaaminen.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilaus</title>
+</head>
+<body>
+  <div id="sivu" class="sivupalkki">
+    <a href="javascript:void(0)" class="sulku" onclick="closeNav()">&times;</a>
+    <hr>
+    <a href="Index.html">Etusivu</a>
+    <hr>
+    <a href="Tiedot.html">Tiedot</a>
+    <hr>
+    <a href="Tuotteet.html">Tuotteet</a>
+    <hr>
+    <a href="Hinnasto.html">Hinnasto</a>
+    <hr>
+  </div>
+  
+  <div id="nappi">
+      <button class="avaus" onclick="openNav()">&#9776; Sivut</button>
+  </div>
+  
+      <script>
+        function openNav() {
+          document.getElementById("sivu").style.width = "250px";
+          document.getElementById("nappi").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("sivu").style.width = "0";
+          document.getElementById("nappi").style.marginLeft= "0";
+        }
+        </script>
+    
+        <div class="box">
+            <a><center><img src="Tilaaminen.png" alt="" class="kuva"></center></a>
+        </div>
+
+        <div class="Tilaus">
+          <br>
+          <div class="Tiedot">
+              <label>Etunimi:</label><br>
+              <input type="text" id="etunimi" name="etunimi"><br>
+              <label>Sukunimi:</label><br>
+              <input type="text" id="sukunimi" name="sukunimi"><br>
+              <label>Osoite:</label><br>
+              <input type="text" id="osote" name="osote"><br>
+          </div>
+          <p class="hint">Hinta: x</p>
+          <button class="btn" onclick="myfunction()">Jatka</button>
+          <p id="ty"></p>
+        </div>
+        <script>
+          function myfunction(){
+            document.getElementById("ty").innerHTML = "Tietosi on tallennettu, tilaus tulee 10 päivän kuluessa tilauksesta!";
+          }
+        </script>
+</body>
+</html>

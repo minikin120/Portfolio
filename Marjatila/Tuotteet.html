@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Tuotteet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuotteet</title>
+</head>
+<body>
+    <div id="sivu" class="sivupalkki">
+        <a href="javascript:void(0)" class="sulku" onclick="closeNav()">&times;</a>
+        <hr>
+        <a href="Index.html">Etusivu</a>
+        <hr>
+        <a href="Tiedot.html">Tiedot</a>
+        <hr>
+        <a href="Hinnasto.html">Hinnasto</a>
+        <hr>
+        <a href="Tilaaminen.html">Tilaaminen</a>
+        <hr>
+      </div>
+      
+      <div id="nappi">
+          <button class="avaus" onclick="openNav()">&#9776; Sivut</button>
+      </div>
+      
+      <script>
+          function openNav() {
+            document.getElementById("sivu").style.width = "250px";
+            document.getElementById("nappi").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("sivu").style.width = "0";
+            document.getElementById("nappi").style.marginLeft= "0";
+          }
+          </script>
+      
+          <div class="teksti">
+              <a><center><img src="Tuotteet.png" alt="" class="kuva"></center></a>
+          </div>
+          
+          <div class="tuotteet">
+            <div class="Mansikka side">
+              <img src="KuvMansikka.jpg" alt="Mansikka" class="KuvMansikka">
+              <h2>Mansikka</h2>
+              <p>3,5€/kg</p>
+            </div>
+
+            <div class="Mustikka side">
+              <img src="KuvMustikka.jpg" alt="Mustikka" class="KuvMustikka">
+              <h2>Mustikka</h2>
+              <p>2,70€/kg</p>
+            </div>
+
+            <div class="Karhunvatukka side">
+              <img src="KuvKarhunvatukka.jpg" alt="Karhunvatukka" class="KuvKarhunvatukka">
+              <h2>Karhunvatukka</h2>
+              <p>24,00€/kg</p>
+            </div>
+
+            <div class="Vadelma side">
+              <img src="KuvVadelma.jpg" alt="Vadelma" class="KuvVadelma">
+              <h2>Vadelma</h2>
+              <p>16,65€/kg</p>
+            </div>
+
+            <div class="Lakka side">
+              <img src="KuvLakka.jpg" alt="Lakka" class="KuvLakka">
+              <h2>Lakka</h2>
+              <p>34,00/kg</p>
+            </div>
+
+            <div class="Punaviinimarja side">
+              <img src="KuvViinimarja.jpg" alt="Punaviinimarja" class="KuvViinimarja">
+              <h2>Punaviinimarja</h2>
+              <p>9,00€/kg</p>
+            </div>
+          </div>
+</body>
+</html>

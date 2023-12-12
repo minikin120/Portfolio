@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Hinnasto.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinnasto</title>
+</head>
+<body>
+  <div id="sivu" class="sivupalkki">
+    <a href="javascript:void(0)" class="sulku" onclick="closeNav()">&times;</a>
+    <hr>
+    <a href="Index.html">Etusivu</a>
+    <hr>
+    <a href="Tiedot.html">Tiedot</a>
+    <hr>
+    <a href="Tuotteet.html">Tuotteet</a>
+    <hr>
+    <a href="Tilaaminen.html">Tilaaminen</a>
+    <hr>
+  </div>
+  
+  <div id="nappi">
+      <button class="avaus" onclick="openNav()">&#9776; Sivut</button>
+  </div>
+  
+  <script>
+      function openNav() {
+        document.getElementById("sivu").style.width = "250px";
+        document.getElementById("nappi").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("sivu").style.width = "0";
+        document.getElementById("nappi").style.marginLeft= "0";
+      }
+      </script>
+  
+      <div class="teksti">
+          <a><center><img src="Hinnasto.png" alt="" class="kuva"></center></a>
+      </div>
+      <div class="hinnat">
+      <div class="hinnat1 hinta">
+        <p>Mansikan hinta</p>
+        <hr>
+        <p>Mustikan hinta</p>
+        <hr>
+        <p>Punaviinimarjan hinta</p>
+        <hr>
+      </div>
+
+      <div class="hinnat2 hinta">
+        <p>Vadelman hinta</p>
+        <hr>
+        <p>Lakan hinta</p>
+        <hr>
+        <p>Karhunvatukan hinta</p>
+        <hr>
+      </div>
+    </div>
+</body>
+</html>
